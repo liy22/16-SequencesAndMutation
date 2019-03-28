@@ -175,6 +175,10 @@ def RETURN_circle(circle, color):
     #          (using the above code for testing).
     #
     # HINT: Use the   clone   method to make the copy.
+    point = circle.center
+    circle2 = rg.Circle(point,circle.radius)
+    circle2.fill_color = color
+    return circle2
 
 
 def run_test_MUTATE_circle():
@@ -306,6 +310,9 @@ def MUTATE_circle(circle, color, n):
     #          Then, IMPLEMENT and test THIS FUNCTION
     #          (using the above code for testing).
     # HINT: This function can be implemented with just TWO lines of code.
+    circle.center.x =circle.center.x + n
+    circle.fill_color = color
+
 
 
 # ----------------------------------------------------------------------
